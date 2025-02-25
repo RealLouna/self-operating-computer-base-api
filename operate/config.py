@@ -63,7 +63,7 @@ class Config:
             api_key=api_key,
         )
         client.api_key = api_key
-        client.base_url = os.getenv("OPENAI_API_BASE_URL", client.base_url)
+        client.base_url = "https://api.chatanywhere.org/v1" # If you use chatanywhere service for ai apis!
         return client
 
     def initialize_google(self):
